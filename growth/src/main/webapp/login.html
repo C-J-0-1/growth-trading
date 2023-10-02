@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="resources/css/signup.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Stock Trading</div>
+    </header>
+
+    <!-- Signup/Login Page Content -->
+    <div class="signup-login-container">
+
+        <div class="form" id="login">
+            <h2>Login</h2>
+            <form method="post" name="login" action="http://localhost:8080/login">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <br><br>
+                <button type="submit">Login</button>
+
+                <br>
+                <h3>Create an account <a href="localhost:8080/signup">signup</a></h3>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-icons">
+            <!-- Add social media icons here -->
+        </div>
+        <p>&copy; 2023 Stock Trading</p>
+    </footer>
+
+</body>
+</html>

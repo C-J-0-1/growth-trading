@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading</title>
+    <link rel="stylesheet" href="resources/css/common.css">
+</head>
+<body>
+	<script src="resources/js/dashboard.js"></script>
+	<!-- Load the Google Charts library -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Stock Trading</div>
+        <div class="user-profile">
+            <img src="user-avatar.jpg" alt="User Avatar">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+
+
+	<!-- Search Bar -->
+	<div class="search-bar">
+		<input type="text" id="stock-symbol" placeholder="Enter a stock symbol...">
+		<button id="search-button">Search</button>
+	</div>
+
+	<!-- Search Results (with scrollable container) -->
+	<div class="search-results" id="search-results">
+		<div class="scrollable-container">
+			<!-- Results Dropdown (initially hidden) -->
+			<div class="results-dropdown" id="results-dropdown">
+				<!-- Display search results here -->
+			</div>
+		</div>
+	</div>
+
+    <div class="current-price" id="current-price" style="white-space: pre;">
+        <!--Display current price of the stock-->
+    </div>
+
+	<!-- Results Table (initially hidden) -->
+	<div class="results-container" id="results-container">
+		<!-- Left Section for the Table -->
+		<div class="left-section">
+			<div class="results-table" id="results-table">
+				<!-- Display search results here -->
+			</div>
+		</div>
+
+		<!-- Right Section for the Graph -->
+		<div class="right-section">
+            <div id="candlestick-chart" style="width: 600px; height: 400px;"></div>
+        </div>
+	</div>
+
+    <!-- Buying/Selling Options -->
+    <div class="options">
+        <!-- Plus and minus buttons to increase/decrease stock quantity -->
+        <button class="quantity-button" id="decrease-quantity">-</button>
+        <input type="number" id="stock-quantity" value="1" min="1">
+        <button class="quantity-button" id="increase-quantity">+</button>
+
+        <button class="buy-option" id="buy-button">Buy</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-icons">
+            <!-- Add social media icons here -->
+        </div>
+        <p>&copy; 2023 Stock Trading</p>
+    </footer>
+</body>
+</html>

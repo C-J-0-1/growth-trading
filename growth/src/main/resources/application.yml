@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/growth_trading
+    username: cj
+    password: Simform@123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      show-sql: 'true'
+      ddl-auto: update
+  mvc:
+    view:
+      suffix: .html
+      prefix: /

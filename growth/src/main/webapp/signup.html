@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="resources/css/signup.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Stock Trading</div>
+    </header>
+
+    <!-- Signup/Login Page Content -->
+    <div class="signup-login-container">
+        <div class="form" id="signup">
+            <h2>Sign Up</h2>
+            <form method="post" name="signup" action="http://localhost:8080/signup">
+                <label for="signup-firstname">First Name</label>
+                <input type="text" id="signup-firstname" name="firstName" required>
+
+                <label for="signup-lastname">Last Name</label>
+                <input type="text" id="signup-lastname" name="lastName" required>
+
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-phone">Phone no.</label>
+                <input type="text" id="signup-phone" name="phone" required>
+
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <br><br>
+                <button type="submit">Sign Up</button>
+
+                <br>
+                <h3>Already have an account? <a href="localhost:8080/login">login</a></h3>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-icons">
+            <!-- Add social media icons here -->
+        </div>
+        <p>&copy; 2023 Stock Trading</p>
+    </footer>
+
+</body>
+</html>
